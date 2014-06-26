@@ -1,0 +1,43 @@
+body {
+    font-family: "Roboto";
+    margin-top: 100px;
+    transition: all 100ms linear;
+}
+
+.header {
+    height: 100px;
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+    position: fixed;   
+    top: 0;
+    z-index: 50;
+    text-align: center;
+}
+.header.links {
+margin: auto;
+}
+.header a {
+    text-decoration: none;
+    height: 100%;
+    width: 200px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+    padding-top: 30px;
+    font-weight: 500;
+    transition: all 200ms linear;
+}
+.header a:hover {
+    background-color: rgba(0,0,0,.7);
+}
+
+
+
+.content {
+    width: 300px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
