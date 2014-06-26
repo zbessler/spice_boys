@@ -1,5 +1,3 @@
-'use strict';
-
 /* Directives */
 
 
@@ -17,5 +15,5 @@ angular.module('Spice.directives', []).
                     $("body").animate({scrollTop: $(attrs.href).offset().top-100}, "slow");
                 });
             }
-        }
+        };
     });
