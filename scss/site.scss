@@ -1,0 +1,44 @@
+@import "vars";
+body {
+    font-family: "Roboto";
+    margin: 0px;
+    padding: 0px;
+    transition: all 100ms linear;
+}
+
+.header {
+    div {
+        display: inline-block;
+    }
+    height: 100px;
+    background-color: $grayed;
+    width: 100%;
+    position: fixed;   
+    top: 0;
+    z-index: 50;
+    text-align: center;
+
+    .links {
+        margin: auto;
+    }
+    a {
+        
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        text-align: center;
+        font-size: 22px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        transition: all 200ms linear;
+        padding: 30px 30px;
+        position: relative;
+        top: 0px;
+    
+        &:hover {
+            top: 15px;
+            
+        }
+    }
+}
