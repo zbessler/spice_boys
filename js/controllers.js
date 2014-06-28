@@ -2,7 +2,7 @@
 
 angular.module('Spice.controllers', [])
   .controller('Home', ['$scope', function($scope) {
-    var a = 2;
+    $scope.showWine = false;
   }])
   .controller('Boys', ['$scope', function($scope) {
     var a = 3;

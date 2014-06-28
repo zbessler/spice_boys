@@ -13,34 +13,58 @@
             content="When your wine just isn't spicy enough, these boys are just what you need." /> 
     <meta property="og:image" content="http://besslerandbessler.com/wine/Images/logo/base_clear.png" /> 
 
-
     <link rel='stylesheet' href='//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css' />
     <link rel='stylesheet' href='css/site.css' />       
     <link rel='stylesheet' href='css/home.css' />    
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
-
-
     
 </head>
 <body>
-    <div class='header'>
+    <div header class='header'>
         <a class='link main' scroll-on-click href='#spice'>Spice Boys</a>
         <a class='link about' scroll-on-click href='#about'>About</a>
         <a class='link wines' scroll-on-click href='#wines'>Wines</a>
         <a class='link boys' href='/boys'>The Boys</a>
     </div>
 
+    <div ng-view></div>
 
-<div ng-view></div>
-
-<div>Angular seed app: v<span app-version></span></div>
+    <footer>
+        &copy;2014 Spice Boys Vineyards a Bessler and Bessler and Sons company.
+        <div class='spacer'></div>
+        <div class="share-btns">    
+            <div class="g-plusone" data-href="http://besslerandbessler.com/wine"></div>
+            <script type="text/javascript">
+              (function() {
+                 var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                 po.src = 'https://apis.google.com/js/plusone.js';
+                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+              })();
+            </script>
+            <a class='pin-btn' href="//www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fbesslerandbessler.com%2Fwine&media=http%3A%2F%2Fbesslerandbessler.com%2Fwine%2FImages%2Flogo.png&description=When%20your%20wine%20just%20isn%26%23x27%3Bt%20spicy%20enough%2C%20these%20boys%20are%20just%20what%20you%20need." data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-text="Best wine I've ever had, you have just got to try it!" 
+                data-hashtags="besslerandbessler,musthave" data-related="Bestever" data-url="http://besslerandbessler.com/wine">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=491767600845855&version=v2.0";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-like" data-href="http://besslerandbessler.com/wine/" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+        </div>
+    </footer>
 
 <!-- In production use:
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
 -->
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/services.js"></script>
     <script src="js/controllers.js"></script>
