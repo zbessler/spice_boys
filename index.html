@@ -14,24 +14,23 @@
     <meta property="og:image" content="http://besslerandbessler.com/wine/Images/logo/base_clear.png" /> 
 
     <link rel='stylesheet' href='//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css' />
-    <link rel='stylesheet' href='css/site.css' />       
-    <link rel='stylesheet' href='css/home.css' />    
+    <link rel='stylesheet' href='css/site.css?v=2' />       
+    <link rel='stylesheet' href='css/home.css?v=2' />    
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
     
 </head>
-<body>
+<body ng-controller='Main'>
     <div header class='header'>
         <a class='link main' scroll-on-click href='#spice'>Spice Boys</a>
         <a class='link about' scroll-on-click href='#about'>About</a>
-        <a class='link wines' scroll-on-click href='#wines'>Wines</a>
+        <a class='link wines' scroll-on-click href='#wines'>{{product}}</a>
         <a class='link boys' href='/boys'>The Boys</a>
     </div>
 
     <div ng-view></div>
 
     <footer>
-        &copy;2014 Spice Boys Vineyards a Bessler and Bessler and Sons company.
-        <div class='spacer'></div>
+        &copy;2014 {{outfit}} a Bessler and Bessler and Sons company.
         <div class="share-btns">    
             <div class="g-plusone" data-href="http://besslerandbessler.com/wine"></div>
             <script type="text/javascript">
@@ -57,18 +56,19 @@
         </div>
     </footer>
 
-<!-- In production use:
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
--->
-    <script src="bower_components/angular/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+<!--
+    <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/services.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/filters.js"></script>
-    <script src="js/directives.js"></script>
+-->
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.18.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/app.js?v=2"></script>
+    <script src="js/services.js?v=2"></script>
+    <script src="js/controllers.js?v=2"></script>
+    <script src="js/filters.js?v=2"></script>
+    <script src="js/directives.js?v=2"></script>
 </body>
 </html>

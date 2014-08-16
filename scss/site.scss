@@ -3,10 +3,10 @@ body {
     font-family: "Roboto";
     margin: 0px;
     padding: 0px;
-    background: url('../img/collage-products.jpg');
+    background: url('../img/collage-products_m.jpg');
     background-attachment: fixed;
     background-size: contain;
-    transition: all 100ms linear;
+    transition: all 2000ms linear;
     overflow-x: hidden;
 }
 h1 {
@@ -14,9 +14,8 @@ h1 {
 }
 
 .header {
-
-    height: 100px;
-    background-color: $grayed;
+    height: 50px;
+    background-color: black;
     width: 100%;
     position: fixed;   
     top: 0;
@@ -24,30 +23,19 @@ h1 {
     text-align: center;
     transition: all 200ms linear;
 
-    &.header2 {
-        height: 50px;
-        background-color: black;
 
-        a {
-            font-size: 19px;
-            color: $light-brown;
-            padding-top: 10px;
-        }
-    }
 
     .links {
         margin: auto;
     }
     a {
-        
         color: white;
-        font-size: 22px;
+        font-size: 16px;
         font-weight: 500;
         text-decoration: none;
         text-align: center;
         letter-spacing: 1px;
-        padding: 30px 30px;
-        border-radius: 5px;
+        padding: 10px 6px;
         display: inline-block;
         position: relative;
         top: 0px;
@@ -63,16 +51,13 @@ h1 {
 footer {
     background-color: black;
     color: white;
-    font-size: 12px;
+    font-size: 10px;
     padding: 10px;
-    .spacer {
-        display: inline-block;
-        width: 100px;
-    }
+    text-align: center;
 
     .share-btns {
         display: inline-block;
-        float: right;
+        margin-top: 10px;
         
         .twitter-share-button, #twitter-widget-0 {
             width: 80px !important;
@@ -92,3 +77,41 @@ footer {
         }
     }
 }
+
+@media only screen and (min-width: 1000px){
+    body {
+        background: url('../img/collage4.jpg');
+    }
+    .header {
+        height: 100px;
+        background-color: $grayed;
+
+        a {
+            font-size: 22px;
+            padding: 30px 30px;
+        }
+        &.header2 {
+            height: 50px;
+            background-color: black;
+
+            a {
+                font-size: 19px;
+                color: $light-brown;
+                padding-top: 10px;
+            }
+        }
+    }
+    footer {
+        font-size: 12px;
+        text-align: left;
+
+        .share-btns {
+            float: right;
+            margin-top: 0px;
+        }
+    }
+    
+
+}
+
+

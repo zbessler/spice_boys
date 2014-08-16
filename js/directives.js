@@ -37,11 +37,9 @@ angular.module('Spice.directives', []).
                 $(window).on('scroll', function() {
                     var y = $(window).scrollTop();
                     if(y > $(elm).offset().top-500){
-                        elm.css(attrs.slideIn, '0px');
-                        elm.css('opacity', '1');
+                        elm.addClass('wine-in');
                     }else {
-                        elm.css(attrs.slideIn, '300px');
-                        elm.css('opacity', '0');
+                        elm.removeClass('wine-in');
                     }
                 });
             }
@@ -53,11 +51,9 @@ angular.module('Spice.directives', []).
                 $(window).on('scroll', function() {
                     var y = $(window).scrollTop();
                     if(y > 80){
-                        elm.css('bottom', '100px');
-                        elm.css('opacity', '0');
+                        elm.addClass('header-in');
                     }else {
-                        elm.css('bottom', '0px');
-                        elm.css('opacity', '1');
+                        elm.removeClass('header-in');
                     }
                 });
             }
