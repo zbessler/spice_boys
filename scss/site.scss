@@ -3,7 +3,7 @@ body {
     font-family: "Roboto";
     margin: 0px;
     padding: 0px;
-    background: url('../img/collage-products_m.jpg');
+    background: url('../img/collage3_m.jpg');
     background-attachment: fixed;
     background-size: contain;
     transition: all 2000ms linear;
@@ -11,6 +11,11 @@ body {
 }
 h1 {
     color: $dark-brown;
+}
+
+.sb-logo{
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 1000px;
 }
 
 .header {

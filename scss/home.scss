@@ -100,6 +100,9 @@ h1 {
             .wine-inner {
                 border-radius: 3px 0px 0px 3px;
             }
+            .sb-logo {
+                float: left;
+            }
         }
         .wine-inner {
             display: inline-block;
@@ -126,6 +129,10 @@ h1 {
                 padding-bottom: 20px;
             }
         }
+        .sb-logo {
+            float: right;
+            margin: 20px 50px;
+        }
     }
 }
 
@@ -141,7 +148,7 @@ h1 {
     }
     .welcome-area {
         p {
-            width: 400px;
+            width: 120px;
         }
     }
     .about-area {
