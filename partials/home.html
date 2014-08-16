@@ -35,7 +35,8 @@
 
        <div class='wine' slide-in='right' ng-repeat='w in wines'>
             <div class='wine-inner'>
-                <div class='wine-img {{w.attributes.class}}'></div>
+                <!-- <div class='wine-img {{w.attributes.class}}'></div> -->
+                <img class='wine-img' ng-src='{{w.attributes.img}}' alt='Wine Label' />
                 <div class='details'>
                     <div class='name'>{{w.attributes.name}}</div>
                     <div class='desc'>{{w.attributes.desc}}</div>
