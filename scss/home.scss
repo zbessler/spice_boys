@@ -130,8 +130,7 @@ h1 {
             }
         }
         .sb-logo {
-            float: right;
-            margin: 20px 50px;
+            display: none;
         }
     }
 }
@@ -232,7 +231,23 @@ h1 {
                 right: 0px;
                 opacity: 1;
             }
+            .sb-logo {
+                width: 185px;
+                display: inline;
+                margin: 60px 10px;
+                float: right;
+            }
         }
     }
-
+}
+@media only screen and (min-width: 1180px){
+    .wines-area {
+        .wine {
+            .sb-logo {
+                float: right;
+                margin: 20px 50px;
+                width: 279px;
+            }
+        }
+    }
 }
