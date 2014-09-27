@@ -225,6 +225,22 @@ h1 {
                 left: 300px;
                 &.wine-in {
                     left: 0px;
+                    .sb-logo {
+                        left: 0px;
+                    }
+                }
+                .sb-logo {
+                    left: -500px;
+                }
+            }
+            &:nth-of-type(odd) {
+               &.wine-in {
+                    .sb-logo {
+                        right: 0px;
+                    }
+                }
+                .sb-logo {
+                    right: -500px;
                 }
             }
             &.wine-in {
@@ -232,10 +248,12 @@ h1 {
                 opacity: 1;
             }
             .sb-logo {
+                position: relative; 
                 width: 185px;
                 display: inline;
                 margin: 60px 10px;
                 float: right;
+                transition: all 400ms linear;
             }
         }
     }
