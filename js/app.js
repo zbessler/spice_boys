@@ -8,7 +8,7 @@ angular.module('Spice', [
     'Spice.controllers'
 ])
 .constant('AppConfig', {
-    'cache': '3',
+    'version': '3',
     'parseAppId': 'rKS4FvpPwIN1sCSe9jzclbCHT7dU9Bc6yb1aYTxo',
     'parseJsKey': 'k7xpt81zqRsx57ITWPgqsB2SL4JO2pvJLWo8j6mx'
 })
