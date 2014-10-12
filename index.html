@@ -14,8 +14,7 @@
             content="When your wine just isn't spicy enough, these boys are just what you need." /> 
     <meta property="og:image" content="http://wine.besslerandbessler.com/img/logos/spice.jpg" /> 
 
-    <link rel='stylesheet' href='//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css' />
-    <link rel='stylesheet' href='css/site.css?v=2' />       
+    <link rel='stylesheet' href='css/site.css?v={{AppConfig.cache}}' />       
     <link rel='stylesheet' href='css/home.css?v=3' />    
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
     <script>
@@ -33,7 +32,9 @@
         <a class='link main' scroll-on-click href='#spice' google-track='Header|click|Spice Boys'>Spice Boys</a>
         <a class='link about' scroll-on-click href='#about' google-track='Header|click|About'>About</a>
         <a class='link wines' scroll-on-click href='#wines' google-track='Header|click|Product'>{{product}}</a>
+        <!--
         <a class='link boys' href='/boys' google-track='Header|click|The Boys'>The Boys</a>
+        -->
     </div>
 
     <div ng-view></div>
@@ -67,17 +68,8 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
-<!--
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
--->
     <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.18.min.js"></script>
+    <script src="js/wine.min.js?v={{config.cache}}"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/app.js?v=2"></script>
-    <script src="js/services.js?v=2"></script>
-    <script src="js/controllers.js?v=2"></script>
-    <script src="js/filters.js?v=2"></script>
-    <script src="js/directives.js?v=2"></script>
 </body>
 </html>

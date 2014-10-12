@@ -42,7 +42,7 @@ h1 {
     }
     p {
         color: $brown;
-        width: 100%;
+        width: 240px;
         margin: auto;
     }
 }
@@ -111,7 +111,6 @@ h1 {
         }
         .wine-img {
             width: 100%;
-            height: 300px;
             display: inline-block;
         }
         .details {
@@ -147,7 +146,7 @@ h1 {
     }
     .welcome-area {
         p {
-            width: 120px;
+            width: 250px;
         }
     }
     .about-area {
@@ -179,6 +178,7 @@ h1 {
         .wine {
             .wine-img {
                 width: inherit;
+                float: left;
             }
         }
     }

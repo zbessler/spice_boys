@@ -35,7 +35,6 @@
 
        <div class='wine' slide-in='right' ng-repeat='w in wines'>
             <div class='wine-inner'>
-                <!-- <div class='wine-img {{w.attributes.class}}'></div> -->
                 <img class='wine-img' ng-src='{{w.attributes.img}}' alt='Wine Label' />
                 <div class='details'>
                     <div class='name'>{{w.attributes.name}}</div>
@@ -52,7 +51,7 @@
                     <div>Acidity: {{w.attributes.acidity}}</div>
                 </div>
             </div>
-            <img class='sb-logo' src='img/logos/sb_logo.png' />
+            <img class='sb-logo' ng-src='{{logo}}' />
         </div>
     </div>
 </div>

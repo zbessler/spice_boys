@@ -6,11 +6,15 @@ angular.module('Spice', [
     'Spice.services',
     'Spice.directives',
     'Spice.controllers'
-]).
-config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+])
+.constant('AppConfig', {
+    'cache': '3',
+    'parseAppId': 'rKS4FvpPwIN1sCSe9jzclbCHT7dU9Bc6yb1aYTxo',
+    'parseJsKey': 'k7xpt81zqRsx57ITWPgqsB2SL4JO2pvJLWo8j6mx'
+})
+.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider.when('/', {templateUrl: 'partials/home.html', controller: 'Home'});
     $routeProvider.when('/beer', {templateUrl: 'partials/home.html', controller: 'Beer'});
-    $routeProvider.when('/boys', {templateUrl: 'partials/boys.html', controller: 'Boys'});
     $routeProvider.otherwise({redirectTo: '/'});
 
 }]);
